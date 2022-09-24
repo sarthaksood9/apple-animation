@@ -13,34 +13,34 @@ const controller = new ScrollMagic.Controller();
 
 // secen's(video_animation)
 
-let scene = new ScrollMagic.Scene({
-    duration : 8000,
-    triggerElement: intro,
-    triggerHook: 0
+// let scene = new ScrollMagic.Scene({
+//     duration : 8000,
+//     triggerElement: intro,
+//     triggerHook: 0
 
-})
-  .addIndicators()
-  .setPin(intro)
-  .addTo(controller);
-
-
-
-let acellamount = 0.1;
-let scrollpos = 0;
-let delay = 0;
-
-scene.on("update", e => {
-    scrollpos = (e.scrollPos)/1000;
-    // console.log(e);
-});
+// })
+//   .addIndicators()
+//   .setPin(intro)
+//   .addTo(controller);
 
 
 
-setInterval(()=>{
-    delay += (scrollpos - delay) * acellamount;
-    // console.log(scrollpos,delay);
-    video.currentTime = scrollpos;
-},16);
+// let acellamount = 0.1;
+// let scrollpos = 0;
+// let delay = 0;
+
+// scene.on("update", e => {
+//     scrollpos = (e.scrollPos)/1000;
+//     // console.log(e);
+// });
+
+
+
+// setInterval(()=>{
+//     delay += (scrollpos - delay) * acellamount;
+//     // console.log(scrollpos,delay);
+//     video.currentTime = scrollpos;
+// },16);
 
 // text_animation1("For all ios and mac...")
 
